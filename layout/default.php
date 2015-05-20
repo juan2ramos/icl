@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1"/>
     <!-- Meta Facebook -->
     <meta property="og:url" content="">
-    <meta property="og:title" content="circulart"/>
+    <meta property="og:title" content="Icl"/>
     <meta property="og:description" content=".."/>
     <meta property="og:image" content="images/logo.png"/>
 
@@ -44,6 +44,11 @@
                 <li><a href="#">Contactos</a></li>
             </ul>
         </nav>
+        <span class="Header-metrics">x1</span>
+        <span class="Header-metrics right">x2</span>
+        <figure class="Header-img">
+            <img src="img/banner1.jpg" alt=""/>
+        </figure>
         <div class="diamond">
             <div class="diamondContent">
 
@@ -51,7 +56,7 @@
         </div>
         <div class="diamond diamond--left">
             <div class="diamondContent">
-
+                <img class="diamond-img" src="img/1.jpg" alt=""/>
             </div>
         </div>
         <div class="diamond diamond--bottom">
@@ -61,7 +66,7 @@
         </div>
         <div class="diamond diamond--right">
             <div class="diamondContent">
-
+                <img class="diamond-img" src="img/2.jpg" alt=""/>
             </div>
         </div>
     </div>
@@ -79,7 +84,6 @@
 </footer>
 <!-- JavaScript -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 <script src="js/main.js"></script>
 </body>
 </html>
