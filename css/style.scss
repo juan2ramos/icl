@@ -83,14 +83,14 @@ a {
 }
 
 body {
-  background: rgb(226,226,226); /* Old browsers */
-  background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 50%, rgba(226,226,226,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(226,226,226,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(226,226,226,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(255,255,255,1) 50%,rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(255,255,255,1) 50%,rgba(226,226,226,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(255,255,255,1) 50%,rgba(226,226,226,1) 100%); /* IE10+ */
-  background: linear-gradient(to right, rgba(226,226,226,1) 0%,rgba(255,255,255,1) 50%,rgba(226,226,226,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#e2e2e2',GradientType=1 ); /* IE6-9 */
+  background: rgb(226, 226, 226); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 226, 1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(226, 226, 226, 1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 226, 1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 226, 1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 226, 1) 100%); /* IE10+ */
+  background: linear-gradient(to right, rgba(226, 226, 226, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 226, 1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#e2e2e2', GradientType=1); /* IE6-9 */
   font-family: 'explogos';
   font-size: 16px;
   font-weight: normal;
@@ -114,17 +114,18 @@ ul {
 
 /* Header */
 .Header {
-  border-bottom: 2px solid $red;
-  border-top: 2px solid $red;
-  margin: 100px auto 0;
-  height: 300px;
+  border-bottom: 1px solid $red;
+  border-top: 1px solid $red;
+  margin: 150px auto 0;
+  max-width: 1280px;
+  height: 480px;
   padding: 0 10px;
-  width: 960px;
+  width: 100%;
 }
 
 .Header-wrapper {
-  border-left: 2px solid $red;
-  border-right: 2px solid $red;
+  border-left: 1px solid $red;
+  border-right: 1px solid $red;
   height: 100%;
   position: relative;
 }
@@ -136,45 +137,82 @@ nav {
     display: inline-block;
     vertical-align: middle;
   }
-  & a{
+  & a {
     color: $red;
     display: block;
-    padding: 10px;
-    &:hover{
+    padding: 10px 10px 5px 10px;
+    &:hover {
       color: #000;
     }
   }
   & li:nth-child(3) {
-    margin-right: 200px;
+    margin-right: 340px;
   }
-  & ul{
-    margin-left: -90px;
+  & ul {
+    margin-left: -35px;
   }
 }
 
 .diamond {
   background: #be1e33;
-  height: 140px;
+  box-shadow: 4px 0px 10px rgba(37, 37, 37, 0.4);
+  height: 200px;
   left: 50%;
   margin-left: -80px;
+  overflow: hidden;
   position: absolute;
-  top: -45px;
+  top: -68px;
   transform: rotate(45deg);
-  width: 140px;
+  width: 200px;
 }
-.diamondContent{
+
+.diamond--left {
+  margin-left: -226px;
+  top: 78px
+}
+
+.diamond--bottom {
+  top: 223px
+}
+
+.diamond--right {
+  margin-left: 66px;
+  top: 78px;
+}
+
+.diamond-img {
+  left: -110px;
+  position: relative;
+  top: -41px;
+  width: 422px;
+}
+
+.Header-img {
+  height: 433px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.diamondContent {
+  height: 100%;
   transform: rotate(-45deg);
 }
-.diamond--left{
-  margin-left: -182px;
-  top: -119px;
-}
-.diamond--bottom{
-  top: -158px;
-}
-.diamond--right{
-  margin-left: 22px;
-  top: -399px;
+
+.Header-metrics {
+  background-color: rgb(232, 232, 232);
+  color: $red;
+  display: block;
+  font-size: .6rem;
+  left: -6px;
+  line-height: 0;
+  margin-top: -20px;
+  padding: 15px 0 12px;
+  position: absolute;
+  top: 50%;
 }
 
-
+.right{
+  background-color: #EFEFEF;
+  left: 100%;
+  margin-left: -3px;
+}
