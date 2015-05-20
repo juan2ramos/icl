@@ -1,0 +1,180 @@
+@mixin abs-pos($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+  right: $right;
+  top: $top;
+}
+
+@mixin margin() {
+  margin: 0;
+  padding: 0
+}
+
+@mixin breakpoint($point) {
+  $small: "(min-width: 30rem)";
+  $medium: "(min-width: 46rem)";
+  $large: "(min-width: 65rem)";
+
+  @if $point == large {
+    @media #{$large} {
+      @content;
+    }
+  } @else if $point == medium {
+    @media #{$medium} {
+      @content;
+    }
+  } @else if $point == small {
+    @media #{$small}  {
+      @content;
+    }
+  }
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+/* colors */
+$red: #be1e33;
+$brownLight: #fdfbdc;
+$orange: #e6bb70;
+* {
+  -webkit-box-sizing: border-box; // Safari <= 5
+  -moz-box-sizing: border-box; // Firefox <= 19
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'explogos';
+  src: url('fonts/explogos_-_demo-webfont.eot');
+  src: url('fonts/explogos_-_demo-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/explogos_-_demo-webfont.woff2') format('woff2'),
+  url('fonts/explogos_-_demo-webfont.woff') format('woff'),
+  url('fonts/explogos_-_demo-webfont.ttf') format('truetype'),
+  url('fonts/explogos_-_demo-webfont.svg#explogos_-_demodemo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  background: rgb(226,226,226); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(255,255,255,1) 50%, rgba(226,226,226,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(226,226,226,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(226,226,226,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(255,255,255,1) 50%,rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(255,255,255,1) 50%,rgba(226,226,226,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(255,255,255,1) 50%,rgba(226,226,226,1) 100%); /* IE10+ */
+  background: linear-gradient(to right, rgba(226,226,226,1) 0%,rgba(255,255,255,1) 50%,rgba(226,226,226,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#e2e2e2',GradientType=1 ); /* IE6-9 */
+  font-family: 'explogos';
+  font-size: 16px;
+  font-weight: normal;
+  @include breakpoint(large) {
+    background-position-x: 250px;
+  }
+}
+
+img {
+  width: 100%
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.Header {
+  border-bottom: 2px solid $red;
+  border-top: 2px solid $red;
+  margin: 100px auto 0;
+  height: 300px;
+  padding: 0 10px;
+  width: 960px;
+}
+
+.Header-wrapper {
+  border-left: 2px solid $red;
+  border-right: 2px solid $red;
+  height: 100%;
+  position: relative;
+}
+
+nav {
+  text-align: center;
+
+  & li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  & a{
+    color: $red;
+    display: block;
+    padding: 10px;
+    &:hover{
+      color: #000;
+    }
+  }
+  & li:nth-child(3) {
+    margin-right: 200px;
+  }
+  & ul{
+    margin-left: -90px;
+  }
+}
+
+.diamond {
+  background: #be1e33;
+  height: 140px;
+  left: 50%;
+  margin-left: -80px;
+  position: absolute;
+  top: -45px;
+  transform: rotate(45deg);
+  width: 140px;
+}
+.diamondContent{
+  transform: rotate(-45deg);
+}
+.diamond--left{
+  margin-left: -182px;
+  top: -119px;
+}
+.diamond--bottom{
+  top: -158px;
+}
+.diamond--right{
+  margin-left: 22px;
+  top: -399px;
+}
+
+
