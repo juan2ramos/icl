@@ -35,7 +35,7 @@
 <body>
 <header class="Header">
     <div class="Header-wrapper">
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Proyectos</a></li>
@@ -51,7 +51,7 @@
         </figure>
         <div class="diamond">
             <div class="diamondContent">
-
+                <img class="Logo"  src="../img/logo-icl.svg" alt="" />
             </div>
         </div>
         <div class="diamond diamond--left">
