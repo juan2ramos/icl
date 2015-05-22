@@ -339,58 +339,115 @@ ul {
     background: rgba(190, 30, 51, 0.85);
   }
 }
-.logo-home{
+
+.logo-home {
   margin: 0 auto;
   width: 60px;
 }
-.project{
+
+.project {
   background-image: url(../img/proyectos/back-project.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
-  height: 1000px;
 }
-.project-content{
+
+.project-content {
   background-image: url("../img/proyectos/back-project-t.jpg");
   background-position: center 40px;
   background-repeat: no-repeat;
   background-size: 120%;
   width: 90rem;
-  height: 1000px;
   margin: 0 auto;
 }
-.logo-project{
+
+.logo-project {
   margin: 0 auto 20px;
   padding: 0;
   width: 210px;
 }
-.project-banner figure{
+
+.project-banner figure {
   max-width: 80rem;
   margin: auto;
 }
-.Header-project{
+
+.Header-project {
   padding-top: 230px;
 }
-.project-nav{
-  background: rgba(138,21,36,1);
-  background: -moz-linear-gradient(left, rgba(138,21,36,1) 0%, rgba(190,30,51,1) 47%, rgba(138,21,36,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(138,21,36,1)), color-stop(47%, rgba(190,30,51,1)), color-stop(100%, rgba(138,21,36,1)));
-  background: -webkit-linear-gradient(left, rgba(138,21,36,1) 0%, rgba(190,30,51,1) 47%, rgba(138,21,36,1) 100%);
-  background: -o-linear-gradient(left, rgba(138,21,36,1) 0%, rgba(190,30,51,1) 47%, rgba(138,21,36,1) 100%);
-  background: -ms-linear-gradient(left, rgba(138,21,36,1) 0%, rgba(190,30,51,1) 47%, rgba(138,21,36,1) 100%);
-  background: linear-gradient(to right, rgba(138,21,36,1) 0%, rgba(190,30,51,1) 47%, rgba(138,21,36,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a1524', endColorstr='#8a1524', GradientType=1 );
+
+.project-nav {
+  background: rgba(138, 21, 36, 1);
+  background: -moz-linear-gradient(left, rgba(138, 21, 36, 1) 0%, rgba(190, 30, 51, 1) 47%, rgba(138, 21, 36, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(138, 21, 36, 1)), color-stop(47%, rgba(190, 30, 51, 1)), color-stop(100%, rgba(138, 21, 36, 1)));
+  background: -webkit-linear-gradient(left, rgba(138, 21, 36, 1) 0%, rgba(190, 30, 51, 1) 47%, rgba(138, 21, 36, 1) 100%);
+  background: -o-linear-gradient(left, rgba(138, 21, 36, 1) 0%, rgba(190, 30, 51, 1) 47%, rgba(138, 21, 36, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(138, 21, 36, 1) 0%, rgba(190, 30, 51, 1) 47%, rgba(138, 21, 36, 1) 100%);
+  background: linear-gradient(to right, rgba(138, 21, 36, 1) 0%, rgba(190, 30, 51, 1) 47%, rgba(138, 21, 36, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a1524', endColorstr='#8a1524', GradientType=1);
   max-width: 80rem;
   margin: auto;
   text-align: center;
-  & a{
+  & a {
     color: #ffffff;
   }
-  & li{
+  & li {
     display: inline-block;
     margin: 4px 30px;
     font-size: .8rem;
   }
+}
+
+/* Description */
+.description {
+  background: url("../img/proyectos/desc1.jpg") center no-repeat;
+}
+.description-content {
+  background: url("../img/proyectos/contenido-descripcion.png") center no-repeat;
+  padding: 288px 0;
+}
+.description-p{
+  color: #fff;
+  margin: auto;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  top: -40px;
+  width: 490px;
+  & h2{
+    margin: 0 60px;
+    text-align: left;
+  }
+  & h3{
+    font-size: 3rem;
+    margin: 0;
+  }
+}
+.more-info{
+  color: #fff;
+  padding-bottom: 95px;
+  text-align: center;
+  & span{
+    font-size: 2.5rem;
+    line-height: 2rem;
+    vertical-align: middle;
+  }
+}
+.arrow{
+  border-bottom: 6px solid #fff;
+  border-right: 6px solid #fff;
+  display: block;
+  height: 40px;
+  margin: auto;
+  position: relative;
+  transform: rotate(45deg);
+  top: -15px;
+  width: 40px;
+}
+.more-info-content{
+  background: url("../img/proyectos/more-info-back.jpg");
+  margin: auto;
+  width: 1280px;
 }

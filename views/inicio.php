@@ -102,6 +102,27 @@
                     <img src="img/proyectos/b1.jpg" alt=""/>
                 </figure>
             </div>
+
         </header>
+        <div class="description">
+            <div class="description-content">
+                <div class="description-p">
+                    <h2>Lotes entre </h2>
+
+                    <h3>1200mts2 y 2800mts2</h3>
+
+                    <p>Entrelagos es la entrada a una fantástica experiencia
+                        con la naturaleza. Desde la deslumbrante salida del sol hasta
+                        su imponenete atardecer sobre el piedemonte llanero.
+                        Es realmente un espectáculo incomparable.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="more-info">
+            <span class="arrow"> </span>  <span>+</span> info
+        </div>
     </article>
 </section>
+<div class="more-info-content"></div>
