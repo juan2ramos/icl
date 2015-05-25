@@ -118,7 +118,6 @@ ul {
   border-top: 1px solid $red;
   margin: 150px auto 0;
   max-width: 80rem;
-  height: 480px;
   padding: 0 10px;
   width: 100%;
 }
@@ -126,7 +125,7 @@ ul {
 .Header-wrapper {
   border-left: 1px solid $red;
   border-right: 1px solid $red;
-  height: 100%;
+  padding-bottom: 15px;
   position: relative;
 }
 
@@ -358,8 +357,10 @@ ul {
   background-image: url("../img/proyectos/back-project-t.jpg");
   background-position: center 40px;
   background-repeat: no-repeat;
-  background-size: 120%;
-  width: 90rem;
+  background-size: calc( (.4 * 100vw) + 1210px );
+  @include breakpoint(large) {
+    background-size: 1735px;
+  }
   margin: 0 auto;
 }
 
