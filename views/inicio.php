@@ -121,18 +121,26 @@
 
         </div>
         <div class="more-info">
-            <span class="arrow"> </span>  <span>+</span> info
+            <span class="arrow"> </span> <span>+</span> info
         </div>
     </article>
 </section>
 <div class="more-info-content">
+    <div class="more-info-p">
+        <h2><span>Un nuevo estilo de vida </span>en Villavicencio</h2>
 
-    <h2> <span>Un nuevo estilo de vida </span>en Villavicencio</h2> 
-
-   <ul>
-        <li>· 4 Sedes sociales.</li>    
-        <li>· Lago para deportes náuticos.</li>
-        <li>· Zona de pezca.</li>
-        <li>· Natualeza del piamonte llanero.</li>
-   </ul>
+        <ul>
+            <li>· 4 Sedes sociales.</li>
+            <li>· Lago para deportes náuticos.</li>
+            <li>· Zona de pezca.</li>
+            <li>· Natualeza del piamonte llanero.</li>
+        </ul>
+    </div>
+    <ul>
+        <li><img src="" alt=""/></li>
+        <li><img src="" alt=""/></li>
+        <li><img src="" alt=""/></li>
+        <li><img src="" alt=""/></li>
+        <li><img src="" alt=""/></li>
+    </ul>
 </div>

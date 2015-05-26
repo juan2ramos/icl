@@ -15,6 +15,7 @@
   $small: "(min-width: 30rem)";
   $medium: "(min-width: 46rem)";
   $large: "(min-width: 80rem)";
+  $mediumLarge: "(min-width: 60rem)";
 
   @if $point == large {
     @media #{$large} {
@@ -26,6 +27,10 @@
     }
   } @else if $point == small {
     @media #{$small}  {
+      @content;
+    }
+  }@else if $point == mediumLarge {
+    @media #{$mediumLarge}  {
       @content;
     }
   }
@@ -120,6 +125,9 @@ ul {
   max-width: 80rem;
   padding: 0 10px;
   width: 100%;
+  @include breakpoint(mediumLarge) {
+    margin: 160px auto 0;
+  }
 }
 
 .Header-wrapper {
@@ -145,38 +153,62 @@ ul {
     }
   }
   & li:nth-child(3) {
-    margin-right: 340px;
+    @include breakpoint(mediumLarge) {
+      margin-right: 340px;
+    }
   }
   & ul {
-    margin-left: -70px;
+    @include breakpoint(mediumLarge) {
+      margin-left: -70px;
+    }
   }
 }
 
 .diamond {
   background: #be1e33;
   box-shadow: 4px 0px 10px rgba(37, 37, 37, 0.4);
-  height: 200px;
+  height: 100px;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -50px;
   overflow: hidden;
   position: absolute;
-  top: -68px;
+  top: -130px;
   transform: rotate(45deg);
-  width: 200px;
+  width: 100px;
+  @include breakpoint(mediumLarge) {
+    height: 200px;
+    margin-left: -100px;
+    top: -68px;
+    width: 200px;
+  }
+
 }
 
 .diamond--left {
+  display: none;
   margin-left: -246px;
-  top: 78px
+  top: 78px;
+  @include breakpoint(mediumLarge) {
+    display: block;
+  }
+
 }
 
 .diamond--bottom {
-  top: 223px
+  display: none;
+  top: 223px;
+  @include breakpoint(mediumLarge) {
+    display: block;
+  }
 }
 
 .diamond--right {
+  display: none;
   margin-left: 46px;
   top: 78px;
+  @include breakpoint(mediumLarge) {
+    display: block;
+  }
 }
 
 .diamond-img {
@@ -187,9 +219,15 @@ ul {
 }
 
 .Header-img {
-  height: 433px;
+  height: auto;
   overflow: hidden;
   padding: 0 20px;
+  @include breakpoint(mediumLarge) {
+    display: block;
+    height: 433px;
+    left: 23px;
+    top: 44px;
+  }
 }
 
 .diamondContent {
@@ -198,10 +236,16 @@ ul {
 }
 
 .Logo {
-  left: 23px;
+  left: 12px;
   max-width: 80%;
   position: relative;
-  top: 44px;
+  top: 20px;
+  @include breakpoint(mediumLarge) {
+    display: block;
+    left: 23px;
+    top: 44px;
+  }
+
 }
 
 .Header-metrics {
@@ -270,13 +314,17 @@ ul {
   border: 4px solid #fff;
   display: inline-block;
   height: 97px;
-  left: -160px;
+  left: -65px;
   margin: 0;
+  position: relative;
   overflow: hidden;
   transform: rotate(45deg);
-  width: 97px;
   top: 20px;
-  position: relative;
+  width: 97px;
+  z-index: 1;
+  @include breakpoint(medium) {
+    left: -160px;
+  }
   & p {
     transform: rotate(-45deg);
     margin: 44px 22px;
@@ -292,26 +340,46 @@ ul {
 }
 
 .diamondProject--left {
-  left: 160px;
+  left: 65px;
+  @include breakpoint(medium) {
+    left: 160px;
+  }
 }
 
 .more {
   position: absolute;
-  left: calc(50% + 210px);
+  left: calc(50% + 180px);
   background-color: #be3648;
   height: 135px;
-  width: 190px;
+  @include breakpoint(medium) {
+    left: calc(50% + 210px);
+  }
+  @include breakpoint(large) {
+    width: 190px;
+  }
   & p {
+    background-color: rgba(190, 54, 72, 0.9);
     margin: 19px 0;
     padding: 52px 20px 46px 0;
     border: 1px solid white;
     position: absolute;
-    width: 570px;
-    left: -400px;
-    text-align: right;
+    text-align: center;
     color: white;
     font-size: 1.3rem;
     line-height: 0;
+    width: 255px;
+    left: -300px;
+    @include breakpoint(medium) {
+      width: 400px;
+      left: -400px;
+    }
+    @include breakpoint(large) {
+      background-color: transparent;
+      text-align: right;
+      width: 570px;
+    }
+
+
   }
   & span {
     font-size: 2.5rem;
@@ -321,18 +389,22 @@ ul {
 
 .Projects-nav {
   margin: 0 auto;
-  text-align: center;
   padding: 500px 0 0;
+  text-align: center;
   width: 100%;
   & li {
     background: #5e5e5e;
     color: white;
-    display: inline-block;
+    display: block;
     font-size: .8rem;
     height: 20px;
     line-height: 23px;
+    margin: auto;
     vertical-align: middle;
     width: 220px;
+    @include breakpoint(mediumLarge) {
+      display: inline-block;
+    }
   }
   & li:nth-child(odd) {
     background: rgba(190, 30, 51, 0.85);
@@ -358,6 +430,8 @@ ul {
   background-position: center 40px;
   background-repeat: no-repeat;
   background-size: calc( (.4 * 100vw) + 1210px );
+  margin: 0 auto 20px;
+  padding-bottom: 15px;
   @include breakpoint(large) {
     background-size: 1735px;
   }
@@ -396,8 +470,11 @@ ul {
   }
   & li {
     display: inline-block;
-    margin: 4px 30px;
     font-size: .8rem;
+    margin: 4px 15px;
+    @include breakpoint(medium) {
+      margin: 4px 30px;
+    }
   }
 }
 
@@ -416,14 +493,22 @@ ul {
   position: relative;
   text-align: center;
   top: -40px;
-  width: 490px;
+  @include breakpoint(medium) {
+    width: 490px;
+  }
   & h2{
     margin: 0 60px;
-    text-align: left;
+    text-align: center;
+    @include breakpoint(medium) {
+      text-align: left;
+    }
   }
   & h3{
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
+    @include breakpoint(medium) {
+      font-size: 3rem;
+    }
   }
 }
 .more-info{
@@ -448,7 +533,25 @@ ul {
   width: 40px;
 }
 .more-info-content{
-  background: url("../img/proyectos/more-info-back.jpg");
+  background: url(../img/proyectos/more-info-back.jpg) center no-repeat;
+  color: $red;
+  height: 537px;
   margin: auto;
-  width: 1280px;
+  max-width: 1280px;
+  text-align: center;
+  width: 100%;
+  & h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  & span{
+    display: block;
+    font-size: 1rem;
+  }
+  & ul li{
+    color: #505050;
+  }
+}
+.more-info-p{
+  padding-top: 200px;
 }
