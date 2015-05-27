@@ -44,6 +44,13 @@
                 <li><a href="#">Contactos</a></li>
             </ul>
         </nav>
+
+        <ul class="social">
+            <li class="demo-icon icon-facebook-circled"><a href="https://www.facebook.com/DesarrolloUrbanoICL" target="_blank">&#xe800;</a></li>
+            <li class="demo-icon icon-twitter-circled"><a href=" https://twitter.com/ICL_DesarrolloU" target="_blank">&#xe801;</a></li>
+            <li class="demo-icon icon-instagram"><a href="https://instagram.com/ICLdesarrollourbano" target="_blank">&#xe802;</a></li>
+            <li class="demo-icon icon-pinterest-circled"><a href="https://www.pinterest.com/icldesarrollou/" target="_blank">&#xe803;</a></li>
+        </ul>
         <span class="Header-metrics">x1</span>
         <span class="Header-metrics right">x2</span>
         <figure class="Header-img">
@@ -51,7 +58,7 @@
         </figure>
         <div class="diamond">
             <div class="diamondContent">
-                <img class="Logo"  src="../img/logo-icl.svg" alt="" />
+                <img class="Logo" src="../img/logo-icl.svg" alt=""/>
             </div>
         </div>
         <div class="diamond diamond--left">
@@ -72,10 +79,6 @@
     </div>
 </header>
 
-
-<nav>
-
-</nav>
 
 <?php include $fileName; ?>
 

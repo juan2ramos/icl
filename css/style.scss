@@ -29,7 +29,7 @@
     @media #{$small}  {
       @content;
     }
-  }@else if $point == mediumLarge {
+  } @else if $point == mediumLarge {
     @media #{$mediumLarge}  {
       @content;
     }
@@ -84,6 +84,26 @@ a {
   url('fonts/explogos_-_demo-webfont.svg#explogos_-_demodemo') format('svg');
   font-weight: normal;
   font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'social';
+  src: url('fonts/social.eot?73126877');
+  src: url('fonts/social.eot?73126877#iefix') format('embedded-opentype'),
+  url('fonts/social.woff?73126877') format('woff'),
+  url('fonts/social.ttf?73126877') format('truetype'),
+  url('fonts/social.svg?73126877#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.demo-icon {
+  font-family: social;
+  font-style: normal;
+  display: inline-block;
+  font-size: 1.3rem;
+  color: red;
 
 }
 
@@ -160,6 +180,24 @@ ul {
   & ul {
     @include breakpoint(mediumLarge) {
       margin-left: -70px;
+    }
+  }
+}
+
+.social {
+  margin-right: -50px;
+  position: absolute;
+  right: 50%;
+  top: 102%;
+  @include breakpoint(medium){
+    margin-right: 0;
+    right: 20px;
+    top: 5px;
+  }
+  & a {
+    color: $red;
+    &:hover {
+      color: #5e5e5e
     }
   }
 }
@@ -379,7 +417,6 @@ ul {
       width: 570px;
     }
 
-
   }
   & span {
     font-size: 2.5rem;
@@ -429,7 +466,7 @@ ul {
   background-image: url("../img/proyectos/back-project-t.jpg");
   background-position: center 40px;
   background-repeat: no-repeat;
-  background-size: calc( (.4 * 100vw) + 1210px );
+  background-size: calc((.4 * 100vw) + 1210px);
   margin: 0 auto 20px;
   padding-bottom: 15px;
   @include breakpoint(large) {
@@ -482,11 +519,13 @@ ul {
 .description {
   background: url("../img/proyectos/desc1.jpg") center no-repeat;
 }
+
 .description-content {
   background: url("../img/proyectos/contenido-descripcion.png") center no-repeat;
   padding: 288px 0;
 }
-.description-p{
+
+.description-p {
   color: #fff;
   margin: auto;
   font-size: 1rem;
@@ -496,14 +535,14 @@ ul {
   @include breakpoint(medium) {
     width: 490px;
   }
-  & h2{
+  & h2 {
     margin: 0 60px;
     text-align: center;
     @include breakpoint(medium) {
       text-align: left;
     }
   }
-  & h3{
+  & h3 {
     font-size: 2rem;
     margin: 0;
     @include breakpoint(medium) {
@@ -511,17 +550,19 @@ ul {
     }
   }
 }
-.more-info{
+
+.more-info {
   color: #fff;
   padding-bottom: 95px;
   text-align: center;
-  & span{
+  & span {
     font-size: 2.5rem;
     line-height: 2rem;
     vertical-align: middle;
   }
 }
-.arrow{
+
+.arrow {
   border-bottom: 6px solid #fff;
   border-right: 6px solid #fff;
   display: block;
@@ -532,7 +573,8 @@ ul {
   top: -15px;
   width: 40px;
 }
-.more-info-content{
+
+.more-info-content {
   background: url(../img/proyectos/more-info-back.jpg) center no-repeat;
   color: $red;
   height: 537px;
@@ -540,18 +582,30 @@ ul {
   max-width: 1280px;
   text-align: center;
   width: 100%;
-  & h2{
+  & h2 {
     font-size: 1.7rem;
     font-weight: bold;
   }
-  & span{
+  & span {
     display: block;
     font-size: 1rem;
   }
-  & ul li{
+  & ul li {
     color: #505050;
   }
 }
-.more-info-p{
+
+.more-info-p {
   padding-top: 200px;
+}
+.out{
+  background-color: white;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  left: 0;
+  position: fixed;
+  padding: 10px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 3;
 }
