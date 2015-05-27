@@ -1,6 +1,6 @@
 <section class="Section Projects">
     <div class="Projects-nav">
-        <div class="logo-home">
+        <div class="logo-home" id="proyectos">
             <svg id="svg_1" viewBox="0 0 30px 10px" height="40px" width="100%" y="0px" x="0px"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>

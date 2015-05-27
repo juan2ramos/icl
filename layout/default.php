@@ -33,23 +33,35 @@
 
 </head>
 <body>
-<header class="Header">
+<header class="Header" id="home">
+
+    <ul class="nav--fixed">
+        <li><a href="#home" class="scrollto">Home</a></li>
+        <li><a href="#proyectos"  class="scrollto">Proyectos</a></li>
+        <li><a href="#"  class="scrollto">Beneficios</a></li>
+        <li><a href="#" class="scrollto">Nosotros</a></li>
+        <li><a href="#" class="scrollto">Contactos</a></li>
+    </ul>
     <div class="Header-wrapper">
         <nav class="nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Beneficios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="#home"  class="scrollto">Home</a></li>
+                <li><a href="#proyectos" class="scrollto">Proyectos</a></li>
+                <li><a href="#" class="scrollto">Beneficios</a></li>
+                <li><a href="#" class="scrollto">Nosotros</a></li>
+                <li><a href="#" class="scrollto">Contactos</a></li>
             </ul>
         </nav>
 
         <ul class="social">
-            <li class="demo-icon icon-facebook-circled"><a href="https://www.facebook.com/DesarrolloUrbanoICL" target="_blank">&#xe800;</a></li>
-            <li class="demo-icon icon-twitter-circled"><a href=" https://twitter.com/ICL_DesarrolloU" target="_blank">&#xe801;</a></li>
-            <li class="demo-icon icon-instagram"><a href="https://instagram.com/ICLdesarrollourbano" target="_blank">&#xe802;</a></li>
-            <li class="demo-icon icon-pinterest-circled"><a href="https://www.pinterest.com/icldesarrollou/" target="_blank">&#xe803;</a></li>
+            <li class="demo-icon icon-facebook-circled"><a href="https://www.facebook.com/DesarrolloUrbanoICL"
+                                                           target="_blank">&#xe800;</a></li>
+            <li class="demo-icon icon-twitter-circled"><a href=" https://twitter.com/ICL_DesarrolloU" target="_blank">
+                    &#xe801;</a></li>
+            <li class="demo-icon icon-instagram"><a href="https://instagram.com/ICLdesarrollourbano" target="_blank">
+                    &#xe802;</a></li>
+            <li class="demo-icon icon-pinterest-circled"><a href="https://www.pinterest.com/icldesarrollou/"
+                                                            target="_blank">&#xe803;</a></li>
         </ul>
         <span class="Header-metrics">x1</span>
         <span class="Header-metrics right">x2</span>

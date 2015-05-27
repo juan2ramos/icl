@@ -598,14 +598,28 @@ ul {
 .more-info-p {
   padding-top: 200px;
 }
-.out{
+.nav--fixed{
   background-color: white;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
   left: 0;
   position: fixed;
   padding: 10px;
   text-align: center;
+  transition: all 1s ;
+  transform: translate(0,-60px);
   top: 0;
   width: 100%;
   z-index: 3;
+  & li{
+    display: inline-block;
+  }
+  & a{
+    color: $red;
+    display: block;
+    padding: 10px 4px 5px;
+    text-decoration: none;
+  }
+}
+.open{
+  transform: translate(0,0);
 }
