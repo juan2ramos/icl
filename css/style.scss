@@ -553,12 +553,16 @@ ul {
 
 .more-info {
   color: #fff;
-  padding-bottom: 95px;
   text-align: center;
+  width: 60px;
+  margin: 0 auto 80px;
   & span {
     font-size: 2.5rem;
     line-height: 2rem;
     vertical-align: middle;
+  }
+  & a{
+    color: #ffffff;
   }
 }
 
@@ -578,7 +582,7 @@ ul {
   background: url(../img/proyectos/more-info-back.jpg) center no-repeat;
   color: $red;
   height: 537px;
-  margin: auto;
+  margin: 50px auto;
   max-width: 1280px;
   text-align: center;
   width: 100%;
@@ -606,7 +610,7 @@ ul {
   padding: 10px;
   text-align: center;
   transition: all 1s ;
-  transform: translate(0,-60px);
+  transform: translate(0,-100px);
   top: 0;
   width: 100%;
   z-index: 3;
@@ -622,4 +626,103 @@ ul {
 }
 .open{
   transform: translate(0,0);
+}
+/* Contact */
+.contact-content{
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  & .contact{
+    background: url(../img/back-contact.jpg) center no-repeat;
+    height: 401px;
+    left: 50%;
+    margin: -250px -350px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 700px;
+  }
+  & form{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: $red;
+    margin: 20px;
+  }
+  & input , & textarea{
+    border: 1px solid rgb(200, 200, 200);
+    width: 50%;
+    height: 30px;
+    padding-left: 10px;
+  }
+  & textarea{
+    height: 45px;
+  }
+  & h2{
+    margin: 0;
+    padding: 20px 0 10px;
+  }
+  & label{
+    display: none;
+    width: 15%;
+    @include breakpoint(medium) {
+      display: inline-block;
+    }
+  }
+  & button{
+    background-color: $red;
+    border: none;
+    color: white;
+    padding: 6px 30px 3px;
+    &:hover{
+      background: #5A5A5A;
+    }
+  }
+  }
+  .input-content{
+    padding-bottom: 20px;
+  }
+  .close{
+    background-color: $red;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px 5px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+  }
+  .show{
+    display: block;
+  }
+
+/* About */
+
+.about{
+  background-image: url(../img/proyectos/back-project.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  color: #ffffff;
+  margin: auto;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+}
+.about-content{
+  background: rgba(247,247,247,.95);
+  border-bottom: 10px solid #a11522;
+  color: #676767;
+  margin: auto;
+  max-width: 80rem;
+  text-align: justify;
+  padding: 50px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  & h2{
+    color: $red;
+  }
 }

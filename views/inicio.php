@@ -121,11 +121,14 @@
 
         </div>
         <div class="more-info">
-            <span class="arrow"> </span> <span>+</span> info
+            <a href="#more-info" class="scrollto">
+                <span class="arrow"> </span> <span>+</span> info
+            </a>
         </div>
+
     </article>
 </section>
-<div class="more-info-content">
+<div class="more-info-content" id="more-info">
     <div class="more-info-p">
         <h2><span>Un nuevo estilo de vida </span>en Villavicencio</h2>
 
@@ -144,3 +147,70 @@
         <li><img src="" alt=""/></li>
     </ul>
 </div>
+<div class="contact-content">
+    <div class="contact">
+        <div class="close">X</div>
+        <form action="">
+            <h2>Contacto</h2>
+
+            <div class="input-content">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="Nombre"/>
+            </div>
+            <div class="input-content">
+                <label for="phone">Teléfono</label>
+                <input type="number" name="phone" placeholder="Teléfono"/>
+            </div>
+            <div class="input-content">
+                <label for="mobile">Celular</label>
+                <input type="number" placeholder="Celular" name="mobile"/>
+            </div>
+            <div class="input-content">
+                <label for="mail">E-mail</label>
+                <input type="email" placeholder="E-mail"/>
+            </div>
+            <div class="input-content">
+                <label for="message">Mensaje</label>
+                <textarea name="message" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="input-content">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-primary">Limpiar</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="benefit">
+
+</div>
+<section class="about" id="nosotros">
+    <div class="about-content">
+        <h2>Nosotros</h2>
+
+        <p>Cras varius enim id turpis lacinia suscipit. Ut tincidunt magna sit amet nisi ullamcorper, a venenatis leo
+            fermentum. Etiam non elementum nisl, porttitor aliquet ligula. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Curabitur bibendum aliquam sem eu bibendum. Cras
+            viverra, felis ac placerat volutpat, purus sapien congue lacus, eget vestibulum mauris neque at neque. Duis
+            eget placerat turpis. Integer quis dignissim diam. Phasellus commodo ligula tortor, et condimentum neque
+            vehicula at. Ut nec nulla sapien. Proin a mi eros.</p>
+
+        <p>
+            Nulla pulvinar varius purus ac mattis. Fusce et augue id nisl posuere pharetra. Cras laoreet metus quis
+            rutrum tempor. Aliquam erat volutpat. Mauris egestas vestibulum nisl eu feugiat. Nulla at lacinia ligula, in
+            sollicitudin metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Curabitur ornare viverra neque, non aliquet diam vehicula et. Donec in ante elementum, ultricies
+            nulla nec, accumsan ex. Aenean et blandit nisl, non cursus nunc. Praesent in mi a quam malesuada interdum id
+            ut eros. Proin vitae magna eros.
+
+        </p>
+
+        <p>
+            Donec volutpat, neque sed tempor semper, est ligula lacinia ante, et lacinia diam neque ut massa. Vivamus ac
+            nisl est. Nulla eleifend elit ex, et aliquet urna luctus pretium. Aenean ut placerat augue. Pellentesque
+            imperdiet justo sit amet sapien condimentum luctus. Maecenas euismod sed diam quis convallis. Curabitur eget
+            purus vel risus commodo rutrum quis non lectus. In a scelerisque nibh. Integer eu sollicitudin sapien.
+            Suspendisse eu elit et justo pulvinar ornare. Maecenas quis nisl mauris.
+        </p>
+    </div>
+</section>

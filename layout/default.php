@@ -33,23 +33,23 @@
 
 </head>
 <body>
-<header class="Header" id="home">
+<header class="Header">
 
     <ul class="nav--fixed">
         <li><a href="#home" class="scrollto">Home</a></li>
         <li><a href="#proyectos"  class="scrollto">Proyectos</a></li>
-        <li><a href="#"  class="scrollto">Beneficios</a></li>
-        <li><a href="#" class="scrollto">Nosotros</a></li>
-        <li><a href="#" class="scrollto">Contactos</a></li>
+        <li><a href="#beneficios"  class="scrollto">Beneficios</a></li>
+        <li><a href="#nosotros" class="scrollto">Nosotros</a></li>
+        <li><a href="#contacto" class="scrollto">Contactos</a></li>
     </ul>
     <div class="Header-wrapper">
         <nav class="nav">
             <ul>
                 <li><a href="#home"  class="scrollto">Home</a></li>
                 <li><a href="#proyectos" class="scrollto">Proyectos</a></li>
-                <li><a href="#" class="scrollto">Beneficios</a></li>
-                <li><a href="#" class="scrollto">Nosotros</a></li>
-                <li><a href="#" class="scrollto">Contactos</a></li>
+                <li><a href="#beneficios" class="scrollto">Beneficios</a></li>
+                <li><a href="#nosotros" class="scrollto">Nosotros</a></li>
+                <li><a href="#contacto" class="scrollto">Contactos</a></li>
             </ul>
         </nav>
 
@@ -68,7 +68,7 @@
         <figure class="Header-img">
             <img src="img/banner1.jpg" alt=""/>
         </figure>
-        <div class="diamond">
+        <div class="diamond"  id="home">
             <div class="diamondContent">
                 <img class="Logo" src="../img/logo-icl.svg" alt=""/>
             </div>
