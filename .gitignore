@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 wp-config.php
+=======
+*.DS_Store
+/.idea
+/node_modules
+>>>>>>> 33575897f92692683272fe3a6d6cdf7c1b891a14
