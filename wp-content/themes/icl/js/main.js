@@ -35,14 +35,15 @@ function anchorScroll(event) {
 }
 function close(event) {
 
-    $('.contact-content').removeClass('show')
+    $('.contact-content').removeClass('show');
+    $('.Projects-content-pop').removeClass('show');
 }
 
 function pop(event) {
-    var id = $(this).data("id");
+    var id = '#' + $(this).data("id");
     event.preventDefault();
 
-    $('#'.id).addClass('show');
+    $(id).addClass('show');
 }
 // Handlers
 // =================================================
@@ -73,3 +74,36 @@ $(window).load(function () {
     navSlide();
 
 });
+
+
+
+
+
+
+var map;
+
+function initialize() {
+    var myLatlng = new google.maps.LatLng(4.173581, -73.6033703);
+    var mapOptions = {
+
+        scrollwheel: false,
+        navigationControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+
+        zoom: 13,
+        center: myLatlng,
+        styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"lightness":"82"},{"saturation":"-100"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#879299"}]}]
+    };
+    map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+
+    var infowindow = new google.maps.InfoWindow({
+        content: 'EntreLagos <br> Km 3 Vía el Cairo',
+        position: myLatlng
+    });
+    infowindow.open(map);
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
