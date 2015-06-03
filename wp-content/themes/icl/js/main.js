@@ -37,6 +37,13 @@ function close(event) {
 
     $('.contact-content').removeClass('show')
 }
+
+function pop(event) {
+    var id = $(this).data("id");
+    event.preventDefault();
+
+    $('#'.id).addClass('show');
+}
 // Handlers
 // =================================================
 
@@ -45,6 +52,11 @@ $('.close').on(eventType, function() {
 });
 $('.scrollto').on(eventType, function() {
     anchorScroll.call(this, event);
+});
+
+$('.link-pop').on(eventType, function() {
+
+    pop.call(this, event);
 });
 
 $(window).scroll(navSlide);

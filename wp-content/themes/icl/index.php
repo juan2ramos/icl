@@ -91,11 +91,14 @@
             </ul>
         </div>
         <ul class="Projects-content">
+
+
+
             <li class="project-li project-1">
                 <div class="diamondProject">
-                    <p>Proyecto</p>
+                    <p>Parques los caimitos</p>
                 </div>
-                <a href="#">
+                <a href="#" data-id="caimitos" class="link-pop">
                     <div class="more">
                         <p><span class="">+</span> info</p>
                     </div>
@@ -104,10 +107,16 @@
                 <div class="diamondProject diamondProject--left">
                     <img src="<?php bloginfo('template_directory'); ?>/img/proyectos/d1.jpg" alt=""/>
                 </div>
+                <div class="Projects-content-pop" id="caimitos">
+                    <div class="pop-project"></div>
+                </div>
             </li>
+
+
+
             <li class="project-li project-2">
                 <div class="diamondProject">
-                    <p>Proyecto</p>
+                    <p>La casona del lago</p>
                 </div>
                 <a href="#">
                     <div class="more">
@@ -121,7 +130,7 @@
             </li>
             <li class="project-li project-3">
                 <div class="diamondProject">
-                    <p>Proyecto</p>
+                    <p>Fuerte apache</p>
                 </div>
                 <a href="#">
                     <div class="more">
@@ -135,7 +144,7 @@
             </li>
             <li class="project-li project-4">
                 <div class="diamondProject">
-                    <p>Proyecto</p>
+                    <p>Senderos de cabalgatas</p>
                     </a>
                 </div>
                 <a href="#">
@@ -282,5 +291,8 @@
         </div>
     </section>
 
+<div class="content-pop-project">
+
+</div>
 <?php wp_footer(); ?>
 <?php get_footer(); ?>
