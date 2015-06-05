@@ -213,6 +213,8 @@ ul {
   overflow: hidden;
   position: absolute;
   top: -130px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   width: 100px;
   @include breakpoint(mediumLarge) {
@@ -273,6 +275,8 @@ ul {
 .diamondContent {
   height: 100%;
   transform: rotate(-45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .Logo {
@@ -359,6 +363,8 @@ ul {
   margin: 0;
   position: relative;
   overflow: hidden;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 20px;
   width: 97px;
@@ -367,6 +373,8 @@ ul {
     left: -160px;
   }
   & p {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     transform: rotate(-45deg);
     text-align: center;
     position: relative;
@@ -378,6 +386,8 @@ ul {
     left: -75px;
     position: relative;
     top: -20px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     transform: rotate(-45deg);
     width: 250px;
   }
@@ -579,6 +589,8 @@ ul {
   height: 40px;
   margin: auto;
   position: relative;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -15px;
   width: 40px;
@@ -618,6 +630,9 @@ ul {
   padding: 10px;
   text-align: center;
   transition: all 1s ;
+
+  -moz-transform:translate(0,-100px);
+  -webkit-transform: translate(0,-100px);
   transform: translate(0,-100px);
   top: 0;
   width: 100%;
@@ -633,6 +648,9 @@ ul {
   }
 }
 .open{
+
+  -moz-transform:translate(0,0);
+  -webkit-transform: translate(0,0);
   transform: translate(0,0);
 }
 /* Contact */
@@ -903,6 +921,8 @@ ul {
   height: 10px;
   width: 10px;
   background-color: #910E1E;
+  -moz-transform:translate(0,-100px);
+  -webkit-transform: translate(0,-100px);
   transform: rotate(45deg);
   margin: 10px 11px 10px 0;
   vertical-align: middle;
