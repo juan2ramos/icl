@@ -155,9 +155,7 @@
 
                             <p>Frente al reservorio náutico, con frescura y comodidad, La Casona de Lago es la sede
 
-                                central que permite disfrutar un ambiente tropical. #EntrelagosVillavicencio
-
-                                icldesarrollourbano.com</p>
+                                central que permite disfrutar un ambiente tropical.</p>
                             <figure><img src="<?php bloginfo('template_directory'); ?>/img/proyectos/b2.jpg" alt=""/></figure>
                         </div>
                     </div>
